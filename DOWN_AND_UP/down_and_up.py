@@ -1110,7 +1110,7 @@ def down_and_up(app, message, url, playlist_name, video_count, video_start_with,
                 'extractor_args': {
                     'youtubetab': {'skip': ['authcheck']}
                 },
-                'socket_timeout': 60,
+                'socket_timeout': 60,'playlist_items': '1',
             }
             # Try to use cookies from download directory first, then fallback to user root
             download_cookie_path = os.path.join(user_dir_name, "cookie.txt")
